@@ -1,0 +1,10 @@
+##!/bin/bash
+rm -f *.bin *.mesh
+../../build_test06-quatsch/bin/partmesh -i FM_PW_quad_3d.vtu --ogs2metis
+../../build_test06-quatsch/bin/partmesh -n 2 -m -i FM_PW_quad_3d.vtu -- x0.vtu
+../../build_test06-quatsch/bin/partmesh -n 2 -m -i FM_PW_quad_3d.vtu -- x1.vtu
+../../build_test06-quatsch/bin/partmesh -n 2 -m -i FM_PW_quad_3d.vtu -- y0.vtu
+../../build_test06-quatsch/bin/partmesh -n 2 -m -i FM_PW_quad_3d.vtu -- y1.vtu
+../../build_test06-quatsch/bin/partmesh -n 2 -m -i FM_PW_quad_3d.vtu -- z0.vtu
+../../build_test06-quatsch/bin/partmesh -n 2 -m -i FM_PW_quad_3d.vtu -- z1.vtu
+../../build_test06-quatsch/bin/partmesh -n 2 -m -i FM_PW_quad_3d.vtu -- inj_bound.vtu

@@ -1,0 +1,4 @@
+##!/bin/bash
+rm -f *.bin *.mesh
+../../build_test06-quatsch/bin/partmesh -i geo_domain_3D_q8.vtu --ogs2metis
+../../build_test06-quatsch/bin/partmesh -n 7 -m -i geo_domain_3D_q8.vtu -- geometry_*.vtu
